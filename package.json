@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "node --loader tsx ./functions/generate-combinations.ts",
+    "test": "node --loader tsx --test --no-warnings **/*.test.ts"
   },
   "keywords": [],
   "author": "chuck.danielsson@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^3.11.0"
+  }
 }
